@@ -116,16 +116,16 @@ function gateway_light.node_abm(pos, node, active_object_count, active_object_co
 			    local dir1 = gate.destination_dir
 			    local dest_angle
 				if dir1 == 0 then
-					pos1.z = pos1.z-1
+					pos1.z = pos1.z-2
 					dest_angle = 180
 				elseif dir1 == 1 then
-					pos1.x = pos1.x-1
+					pos1.x = pos1.x-2
 					dest_angle = 90
 				elseif dir1 == 2 then
-					pos1.z=pos1.z+1
+					pos1.z=pos1.z+2
 					dest_angle = 0
 				elseif dir1 == 3 then
-					pos1.x = pos1.x+1
+					pos1.x = pos1.x+2
 					dest_angle = -90
 				end
 			    object:moveto(pos1,false)
